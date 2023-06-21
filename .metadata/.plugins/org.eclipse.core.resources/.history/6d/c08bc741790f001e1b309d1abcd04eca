@@ -1,0 +1,9 @@
+package springIntro;
+
+public class CustomerDal implements IcustomerDal{
+	
+	public void add() {
+		System.out.println("It has been inserted into the Oracle database");
+	}
+
+}

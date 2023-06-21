@@ -1,0 +1,12 @@
+package springIntro;
+
+public class MsSqlCustomerDal implements IcustomerDal{
+
+	@Override
+	public void add() {
+		System.out.println("it has been inserted into the MsSql database");
+		
+	}
+	
+
+}

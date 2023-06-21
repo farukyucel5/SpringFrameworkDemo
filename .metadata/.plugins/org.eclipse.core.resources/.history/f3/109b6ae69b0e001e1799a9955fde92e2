@@ -1,0 +1,10 @@
+package springIntro;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CustomerManager customer=new CustomerManager(new CustomerDal());
+		customer.add();
+}
+
+}

@@ -1,0 +1,15 @@
+package springIntro;
+
+public class CustomerManager implements ICustomerService{
+	IcustomerDal customer;
+	
+	public CustomerManager(IcustomerDal customer) {
+		this.customer = customer;
+	}
+
+	public void add() {
+		//conditions
+		customer.add();
+	}
+
+}

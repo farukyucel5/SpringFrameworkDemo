@@ -1,0 +1,11 @@
+package springIntro;
+
+public class CustomerManager {
+	
+	public void add() {
+		//conditions
+		CustomerDal customer=new CustomerDal();
+		customer.add();
+	}
+
+}

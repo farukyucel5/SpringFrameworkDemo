@@ -1,0 +1,11 @@
+package springIntro;
+
+public class MySqlCustomerDal implements IcustomerDal {
+
+	@Override
+	public void add() {
+		System.out.println("It has been inserted into the Oracle database");
+		
+	}
+
+}

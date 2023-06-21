@@ -1,0 +1,24 @@
+package springIntro;
+
+public class CustomerManager implements ICustomerService{
+	IcustomerDal customerDal;
+	
+	// constructor injection
+	/*
+	 
+	  public CustomerManager(IcustomerDal customer) {
+		this.customer = customer;
+	}
+	*/
+	
+   //setter injection
+	public void setCustomer(IcustomerDal customerDal) {
+		this.customerDal = customerDal;
+	}
+
+	public void add() {
+		//conditions
+		customerDal.add();
+	}
+
+}
