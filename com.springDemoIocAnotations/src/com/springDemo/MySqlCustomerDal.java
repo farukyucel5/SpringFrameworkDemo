@@ -1,11 +1,14 @@
 package com.springDemo;
 
-public class MySqlCustomerDal implements IcustomerDal {
+import org.springframework.beans.factory.annotation.Value;
 
+public class MySqlCustomerDal implements IcustomerDal {
+	@Value("${MySqldatabase.connectionString}")
     String connectionString;
 	
 	public String getConnectionString() {
 		return connectionString;
+		
 	}
 
 	public void setConnectionString(String connectionString) {
